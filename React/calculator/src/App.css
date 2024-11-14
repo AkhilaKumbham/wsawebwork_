@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*poopins link for font*/
+body{
+    margin:0px; /*first moved all to corner*/
+    padding:0px; /*first moved all to corner withoutspace*/
+    background-color: #FBF4FD; /*background color lightpnk is applied*/
+}
+
+.main-container{
+    width: 100; /*height width adjusted for the content*/  
+    height: auto;
+}
+
+.sub-container{  /*middle part cal and cal image,buttons part*/ 
+    width: 100%;  /*middle part width,heght*/
+    height: 450px;
+
+}
+.header-container
+{
+    float: left;
+    width: 50%;
+}
+.header{
+    color:#000000;
+    font-size:60px;
+    font-weight:700;
+    font-family:"Poppins", sans-serif;  /*cal styling*/
+    text-transform: uppercase;
+    padding: 60px;
+}
+.calculator-container{
+width:50% ;
+height: 450px;
+float:right;
+}
+.background-circle{
+    width: 450px;
+    height: 450px;
+    border-radius:50%; /*to get the circle*/
+    background-color: #f5eaf9;
+    position: relative;
+    bottom: 10%;
+}
+.Calculator
+{
+
+width: 300px;
+height: 450px;
+background-color: #ffffff;  /*background color of cal*/
+position: relative; /*when scrolled should move along bg*/
+bottom: 110%; /*moves 110% up from bottom*/
+left:8%;
+border-radius:33px; /*to get curve cal shape */
+border: 10px solid #e2e2e2;
+
+}
+.output-field-container
+{
+background-color: #f3f2f2; /*cal border,height, radius curve border desin part*/
+width:265px;
+height:110px;
+margin:12px;
+border-radius: 20px;
+border: none;
+}
+/*.input-reference-field
+{
+pending
+}*/
+.output-field,.input-field{
+    background-color: #f3f2f2; /* cal input text area part editing*/
+    width:94%; 
+    margin:1px 3px;
+    font-size: 40px;
+    padding: 10px 5px 0px 5px ;
+    border-radius: 20px;
+    border:none;
+    text-align: end;
+    
+}
+.output-field:focus{
+    outline:none;
+}  /*remove color around textbox*/
+
+.input-field:focus{
+    outline: none;
+}
+
+.btn-row
+{
+   margin:auto auto auto 24px;
+   width:93%;
+}
+button{
+    margin:4px 5px;   /*aligining buttons size,shape*/
+    width:50px;
+    border-radius:10px;
+    height:50px;
+    border:none;
+    font-size:20px;
+}
+
+.bg-icon:hover {
+    background-color: #fceebd; /* clear line button with yellow color when cursor is over them*/
+}
+button:hover{
+    cursor: pointer;   /*cursor 
+    display grey to remaining no buttons  when hovered*/
+    background-color: #2a2828;
+    color: #f3f2f2;
+}
+button > i{
+    color:#bd882a; /*due to combinator special buttons color is this*/
+    font-size:15px;
+}
+button:hover>i{
+    color:white;
+}
+.bg-icon{
+    background-color: #fceebd; 
+}
+.zero{
+    width: 115px;
+
+}
+.equal-icon{
+    background-color: #ffc138; /*Dark color than remaining*/
+}
+.footer-name
+{
+    font-family: "Poppins", sans-serif;
+    padding: 60px;
+    font-size:13px;
+    text-transform: uppercase;
+    position:absolute;
+    bottom: 0;
+} 
