@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11</title>
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styling */
+        .site-header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .site-header h1 {
+            font-size: 24px;
+            display: inline-block;
+            margin: 0;
+        }
+
+        .nav-links {
+            display: inline-block;
+            float:right;
+            margin-top: 10px;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Post Section Styling */
+        .article-section {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .article-section h2 {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .article-block {
+            display: flex;
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-image {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .content-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .date-box {
+            background-color: #00a085;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            width: 60px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .title-box {
+            color: #333;
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .author-info {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .post-description {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .action-link {
+            margin-top: 15px;
+        }
+
+        .action-link a {
+            background-color: #00a085;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .action-link a:hover {
+            background-color: #008a6d;
+        }
+
+        /* Pagination Styling */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            color: white;
+            background-color: #00a085;
+            padding: 10px 15px;
+            margin: 0 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover {
+            background-color: #008a6d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <h1>KUBRAT</h1>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Components</a>
+            <a href="#">Type & Grid</a>
+            <a href="#">Charts</a>
+            <a href="#">Blog</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="article-section">
+        <h2>Recent Posts</h2>
+
+        <!-- First Post -->
+        <div class="article-block">
+            <img src="images102/image101.png" alt="A view by the sea" class="post-image">
+            <div class="content-details">
+                <div class="date-box">01 JUL</div>
+                <div class="title-box">A View by the Sea</div>
+                <div class="author-info">by Paul Jarvis on Unsplash</div>
+                <div class="post-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam nulla a quam porttitor, non faucibus velit mollis.
+                    Praesent vitae ipsum feugiat, fermentum nibh sed, accumsan lectus. Fusce tempus odio eu velit vestibulum, eu euismod magna tempor.
+                </div>
+                <div class="action-link">
+                    <a href="#">Continue reading</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Post -->
+        <div class="article-block">
+            <img src="images102/image102.png" alt="Man fishing by the shore" class="post-image">
+            <div class="content-details">
+                <div class="date-box">25 JUN</div>
+                <div class="title-box">Man Fishing</div>
+                <div class="author-info">by Yoni Kaplan-Nadel on Unsplash</div>
+                <div class="post-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam nulla a quam porttitor, non faucibus velit mollis.
+                    Praesent vitae ipsum feugiat, fermentum nibh sed, accumsan lectus. Fusce tempus odio eu velit vestibulum, eu euismod magna tempor.
+                </div>
+                <div class="action-link">
+                    <a href="#">Continue reading</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination Links -->
+        <div class="pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+        </div>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>

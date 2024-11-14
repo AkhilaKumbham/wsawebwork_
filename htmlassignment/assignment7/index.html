@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Image Gallery</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        img {
+            height: 110px;
+            width: 150px;
+            display: block;
+        }
+        table {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        .imgg {
+            width: 100%;
+            object-fit: cover;
+        }
+        td {
+            border: 1px solid;
+            text-align: center; /* Centers content horizontally */
+            vertical-align: middle; /* Centers content vertically */
+        }
+        thead {
+            background-color: #fefe68;
+            color: blueviolet;
+            padding: 20px;
+        }
+        tbody {
+            background-color: #f8f9d1;
+        }
+        .img-cent {
+            display: block;
+            margin: 0 auto; 
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="10">My Image Gallery</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3"><img class="imgg" src="images715/image1.png" alt="pic1"></td>
+                    <td><img src="images715/image2.png" alt="pic2"></td>
+                    <td rowspan="3"><img src="images715/image3.png" alt="pic3" class="img-cent"></td>
+                </tr>
+                <tr>
+                    <td><img src="images715/image4.png" alt="pic4"></td>
+                    <td rowspan="2"><img src="images715/image5.png" alt="pic5"></td>
+                    <td><img src="images715/image6.png" alt="pic6"></td>
+                    <td><img src="images715/image7.png" alt="pic7"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="images715/image8.png" alt="pic9"></td>
+                    <td><img src="images715/image9.png" alt="pic10"></td>
+                    <td><img src="images715/image10.png" alt="pic11"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><img src="images715/image11.png" alt="pic12" class="imgg"></td>
+                    <td><img src="images715/image12.png" alt="pic13"></td>
+                </tr>
+                <tr>
+                   
+                    <td rowspan="2"><img src="images715/image13.png" alt="pic14"></td>
+                    <td><img src="images715/image14.png" alt="pic15"></td>
+                    <td colspan="3"><img src="images715/image15.png" alt="pic16" class="imgg"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

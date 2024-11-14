@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        .link {
+            display: block;
+            margin: 20px 0;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>City Map</h1>
+    <img src="mapimage.png" usemap="#citymap" alt="Map showing different areas">
+
+    <map name="citymap">
+       
+        <area shape="poly"  coords="187,278,278,289,260,340,154,353" href="west.html" alt="West">
+        <area shape="poly" coords="87,157,166,172,141,300,87,296" href="dasarahalli.html" alt="Dasarahalli">
+        <area shape="poly" coords="268,24,385,407,330,152,191,175" href="byatarayanapura.html" alt="Byatarayanapura">
+        <area shape="poly" coords="242,214,412,210,398,365,297,375" href="east.html" alt="East"> 
+        <area shape="rect" coords="217,414,373,432,352,460,229,465" href="south.html" alt="South"> 
+        <area shape="poly" coords="247,532,428,506,439,583,234,604" href="bommanahalli.html" alt="Bommanahalli">
+        <area shape="poly" coords="426,149,720,302,703,443,462,504" href="mahaldevapura.html" alt="Mahadevapura">
+        <area shape="poly" coords="40,285,130,340,181,563,20,499" href="rrnagar.html" alt="RRnagara">
+    </map>
+
+    <div>
+        <a class="link" href="assignment5.html">Back to Home page</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c5c5c5;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo and nav items to the left */
+    padding-left: 100px; /* Move the entire navbar content to the right */
+}
+
+.logo {
+    margin-right: 30px; /* Add space between logo and nav items */
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Add space between links */
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.nav-list li a:hover {
+    background-color: lightorange;
+    color: lightsalmon;
+}
+
+/* Content section */
+.content-area {
+    padding: 20px;
+}
+
+/* Hide all sections by default */
+.content {
+    display: none;
+}
+
+/* Show the section when its ID is targeted in the URL */
+:target {
+    display: block;
+}

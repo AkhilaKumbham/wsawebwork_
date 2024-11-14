@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            margin: 0;
+        }
+
+        .two-parts {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-part {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(234, 237, 185);
+            padding: 20px;
+            width: 30%;
+            border-right: 6px solid grey; /* Grey dividing line */
+        }
+
+        .Main-headingleft {
+            color: cornflowerblue;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px; /* Reduced font size for "My HTML Assignments" */
+            margin-bottom: 20px;
+        }
+
+        .left-links a {
+            display: block;
+            color: purple;
+            margin-bottom: 10px;
+            text-decoration: underline; /* Ensuring the links are underlined */
+            font-weight: normal;
+            font-size: 18px; /* Adjusting the font size */
+            font-family: "Times New Roman", Times, serif; /* Matching the font family */
+        }
+
+        .left-links a:hover {
+            color: darkred;
+        }
+
+        .right-side {
+            background-color: #f7e7cf;
+            width: 70%;
+            padding: 20px;
+            border-left: 2px solid black; /* Thinner black border */
+        }
+
+        .right-heading {
+            color: navy;
+            font-size: 24px; /* Reduced font size for "Welcome Mentor" */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rigth-content h2 {
+            color: #d16b75;
+            font-size: 18px; /* Reduced font size for "About Me" */
+        }
+
+        .rigth-content {
+            font-size: 20px;
+        }
+
+        .My-details {
+            margin-left: 60px; /* Moves the details to the right */
+        }
+
+        .My-details p {
+            margin: 10px 0; /* Reduced margin between lines */
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .My-details p span {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="two-parts">
+        <div class="left-part">
+            <div class="Main-headingleft">
+                <h1>My HTML Assignments</h1>
+            </div>
+            <div class="left-links">
+                <a href="assignment1.html">Assignment 1</a>
+                <a href="assignment2.html">Assignment 2</a>
+                <a href="assignment3.html">Assignment 3</a>
+                <a href="index.html">Assignment 4</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="right-heading">
+                <h1>Welcome Mentor</h1>
+            </div>
+            <div class="rigth-content">
+                <h2>About Me</h2>
+                <div class="My-details">
+                    <p>Name: <span>John Doe</span></p>
+                    <p>Education: <span>BE in CSE</span></p>
+                    <p>Place: <span>Ankola, Karnataka</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

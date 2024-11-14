@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color:rgb(159, 106, 128); /* Very light pastel background */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            color: #333; /* Darker gray for text */
+        }
+
+        /* Container for the left and right section */
+        .music-player {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            gap: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            border-radius: 12px;
+            background-color: #ffffff;
+            padding: 20px;
+            align-items: stretch; /* Ensures both sides stretch to the same height */
+        }
+
+        /* Left side - Song List */
+        .song-list {
+            width: 40%;
+            background-color: #f8f0f5; /* Very soft pink background */
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .song-list a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .song-list a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+        }
+
+        .song-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 8px;
+            background-color: #f0e1e5; /* Soft pink for icons */
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for icons */
+        }
+
+        .song-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #4a4a4a; /* Darker gray for song titles */
+        }
+
+        /* Right side - Song Details */
+        .song-details-container {
+            width: 60%;
+            padding-left: 20px;
+        }
+
+        .song-details {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .song-icon-large {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow around image */
+        }
+
+        .song-description {
+            font-size: 16px;
+            color: #4f4f66; /* Dark navy blue */
+            background-color: #f8f0f4; /* Soft rose gold background for description */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            line-height: 1.6; /* Improve readability */
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="music-player">
+        <!-- Left Container with Song Names -->
+        <div class="song-list">
+            <a href="#song1">
+                <img src="piano.jpg" alt="Piano Icon" class="song-icon">
+                <span class="song-title">Sweet Story</span>
+            </a>
+            <a href="#song2">
+                <img src="guitar.jpg" alt="Guitar Icon" class="song-icon">
+                <span class="song-title">Pure Dream</span>
+            </a>
+            <a href="#song3">
+                <img src="musicinst.jpg" alt="Music Icon" class="song-icon">
+                <span class="song-title">Careful</span>
+            </a>
+            <a href="#song4">
+                <img src="violin.jpg" alt="Violin Icon" class="song-icon">
+                <span class="song-title">Enlivening</span>
+            </a>
+            <a href="#song5">
+                <img src="trumph.jpg" alt="Trumpet Icon" class="song-icon">
+                <span class="song-title">Harmony</span>
+            </a>
+        </div>
+
+        <!-- Right Container with Song Details -->
+        <div class="song-details-container">
+            <!-- Song 1 Details -->
+            <div class="song-details" id="song1">
+                <img src="piano.jpg" alt="Piano Icon" class="song-icon-large">
+                <div class="song-description">
+                    <p><strong>Title:</strong> Sweet Story</p>
+                    <p><strong>Composer:</strong> Guillermo Guareschi</p>
+                    <p><strong>Instruments:</strong> Piano, Violin</p>
+                    <p><strong>Singer:</strong> John Doe</p>
+                    <p><strong>Artists:</strong> John Doe, Jane Smith</p>
+                </div>
+                <audio controls>
+                    <source src="Guillermo Guareschi - A Sweet Story (freetouse.com).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Song 2 Details -->
+            <div class="song-details" id="song2">
+                <img src="guitar.jpg" alt="Guitar Icon" class="song-icon-large">
+                <div class="song-description">
+                    <p><strong>Title:</strong> Pure Dream</p>
+                    <p><strong>Composer:</strong> Kashia</p>
+                    <p><strong>Instruments:</strong> Guitar, Synth</p>
+                    <p><strong>Singer:</strong> Alice Blue</p>
+                    <p><strong>Artists:</strong> Alice Blue, Mark Lewis</p>
+                </div>
+                <audio controls>
+                    <source src="Kashia - Pure Dream (freetouse.com).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Song 3 Details -->
+            <div class="song-details" id="song3">
+                <img src="musicinst.jpg" alt="Music Icon" class="song-icon-large">
+                <div class="song-description">
+                    <p><strong>Title:</strong> Careful</p>
+                    <p><strong>Composer:</strong> Pufino</p>
+                    <p><strong>Instruments:</strong> Guitar, Drums</p>
+                    <p><strong>Singer:</strong> Michael Johnson</p>
+                    <p><strong>Artists:</strong> Michael Johnson, Sarah Lee</p>
+                </div>
+                <audio controls>
+                    <source src="Pufino - Careful (freetouse.com).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Song 4 Details -->
+            <div class="song-details" id="song4">
+                <img src="violin.jpg" alt="Violin Icon" class="song-icon-large">
+                <div class="song-description">
+                    <p><strong>Title:</strong> Enlivening</p>
+                    <p><strong>Composer:</strong> Pufino</p>
+                    <p><strong>Instruments:</strong> Drums, Bass</p>
+                    <p><strong>Singer:</strong> Sam Turner</p>
+                    <p><strong>Artists:</strong> Sam Turner, Rita Hall</p>
+                </div>
+                <audio controls>
+                    <source src="Pufino - Enlivening (freetouse.com).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Song 5 Details -->
+            <div class="song-details" id="song5">
+                <img src="trumph.jpg" alt="Trumpet Icon" class="song-icon-large">
+                <div class="song-description">
+                    <p><strong>Title:</strong> Harmony</p>
+                    <p><strong>Composer:</strong> Pufino</p>
+                    <p><strong>Instruments:</strong> Piano, Flute</p>
+                    <p><strong>Singer:</strong> Emily Brown</p>
+                    <p><strong>Artists:</strong> Emily Brown, James Miller</p>
+                </div>
+                <audio controls>
+                    <source src="Pufino - Harmony (freetouse.com).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

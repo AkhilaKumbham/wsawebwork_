@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .home-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            background-color: #f6b900; /* Yellow background */
+        }
+        .content {
+            max-width: 50%;
+            padding: 50px;
+            color: white;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .subheading {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .learn-more {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            border: 2px solid white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        .learn-more:hover {
+            background-color: white;
+            color: #f6b900;
+        }
+        .image-container {
+            max-width: 50%;
+            height: 100%;
+        }
+        .image-container img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <section id="home" class="home-section">
+        <div class="content">
+            <h1>LET'S BEGIN</h1>
+            <p class="subheading">WEB DESIGNER</p>
+            <p>Make designed by as Begindot.</p>
+            <a href="about.html" class="learn-more">LEARN MORE</a>
+        </div>
+        <div class="image-container">
+            <img src="your-photo.jpg" alt="Person with coffee">
+        </div>
+    </section>
+</body>
+</html>

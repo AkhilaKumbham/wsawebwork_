@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 13</title>
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/1a61482e4b.js" crossorigin="anonymous"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        Edmin
+        <ul>
+            <!-- Navigation icons -->
+            <li><a href="#"><img src="src/inbox.PNG"></a></li>
+            <li><a href="#"><img src="src/eye.svg" height="25px"></a></li>
+            <li><a href="#"><img src="src/charts.png" height="25px"></a></li>
+            <li><input type="text" id="search-bar"><img src="src/search.png" height="25px"></li>
+        </ul>
+        <ul>
+            <!-- Dropdown and user profile options -->
+            <li><a href="#">Dropdown </a></li>
+            <li><a href="#">Support<i class="fa-solid fa-caret-down"></i></a></li>
+            <li><a href="#"><img src="src/women.png" style="width: 30px;height: 25px;"></a><i class="fa-solid fa-caret-down"></i></li>
+        </ul>
+        <!-- Hamburger menu icon for mobile navigation -->
+        <i class="fa fa-bars nav-toggle"></i> 
+    </nav>
+
+    <!-- Main container holding sidebar and content -->
+    <div class="container">
+        <!-- Sidebar for navigation -->
+        <div class="sidebar">
+            <!-- First section in the sidebar -->
+            <div class="sidebar-section">
+                <!-- Dashboard link -->
+                <div class="menu-item"><img src="src/dashboard.png"><p>dashboard</p></div>
+                <!-- News Feed and Inbox -->
+                <div class="sub-section">
+                    <div class="sub-item"><img src="src/announce.PNG" id="news-image"><p>News Feed</p></div>
+                    <div class="menu-item"><img src="src/icon9.png"><p>Inbox</p><div id="msg-counter">11</div></div>
+                </div>
+                <!-- Tasks section -->
+                <div class="menu-item"><img src="src/tasks.png"><p>Tasks</p><div id="task-counter">19</div></div>
+            </div> 
+            
+            <!-- Second section in the sidebar -->
+            <div class="sidebar-section-2">
+                <!-- Buttons, Typography, Forms, Tables, Charts options -->
+                <div class="menu-item"><img src="src/b.jpg"><p>Buttons</p></div>
+                <div class="menu-item"><img src="src/typography.png">Typography</div>
+                <div class="menu-item"><img src="src/forms.png">Forms</div>
+                <div class="menu-item"><img src="src/tables.png">Tables</div>
+                <div class="menu-item"><img src="src/charts.png">Charts</div>
+            </div>
+
+            <!-- Third section in the sidebar -->
+            <div class="sidebar-section-3">
+                <!-- More pages and Logout -->
+                <div class="menu-item"><img src="src/more pages.jpg">More Pages <div class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></div></div>
+                <div class="menu-item"><img src="src/logout.png">LogOut</div>
+            </div>
+        </div> <!-- Closing the sidebar div -->
+        
+        <!-- Main content wrapper -->
+        <div class="content-wrapper">
+            <!-- Overview of growth, new users, and profit -->
+            <div class="content-section">
+                <div class="growth-info icon"><img src="src/loop symbol.PNG"><span>65%</span> <br> growth</div>
+                <div class="user-info icon"><img src="src/people.PNG">New Users</div>
+                <div class="profit-info icon"><img src="src/money.PNG"><span>15,152</span> <br> Profit</div>
+
+                <!-- Group of key metrics: Messages, Clients, Expenses, etc. -->
+                <div class="group-section">
+                    <div class="message-info icon"><img src="src/inbox.PNG">Messages</div>
+                    <div class="client-info icon"><img src="src/4 people.PNG">Clients</div>
+                    <div class="expense-info icon"><img src="src/arrow.PNG">Expenses</div>
+                    <div class="sales-info icon"><img src="src/save.PNG">Total sales</div>
+                    <div class="social-info icon"><img src="src/announce.PNG">Social Feed</div>
+                    <div class="bounce-info icon"><img src="src/bounce.PNG">Bounce Rate</div>
+                </div>
+
+                <!-- Progress bars for different platforms -->
+                <div class="progress-section">
+                    <div class="progress-item">
+                        <span class="progress-label">Windows 8</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill windows"></div>
+                        </div>
+                        <span class="progress-percent">78%</span>
+                    </div>
+                    
+                    <div class="progress-item">
+                        <span class="progress-label">Mac</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill mac"></div>
+                        </div>
+                        <span class="progress-percent">56%</span>
+                    </div>
+            
+                    <div class="progress-item">
+                        <span class="progress-label">Linux</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill linux"></div>
+                        </div>
+                        <span class="progress-percent">44%</span>
+                    </div>
+            
+                    <div class="progress-item">
+                        <span class="progress-label">iPhone</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill iphone"></div>
+                        </div>
+                        <span class="progress-percent">67%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section for displaying profit chart -->
+            <div class="chart-section">
+                <div class="profit-chart-section">
+                    <p>Profit Chart</p>
+                </div>
+                <img src="src/graph.PNG" alt="graph">
+            </div>
+
+            <!-- Data tables section -->
+            <div class="data-tables-section">
+                <div class="data-section">
+                    <!-- Data tables header -->
+                    <div class="data-header">
+                        <p>Data Tables</p>
+                    </div>
+                    <!-- Actual data table content -->
+                    <div class="data-tables-content">
+                        <table id="data-table" class="display">
+                            <!-- Search and filter section above the table -->
+                            <thead>
+                                <div class="search-section">
+                                    <div class="show-entries">
+                                        show <input type="number" id="entry-count"> entries
+                                    </div>
+                                    <div class="table-search">search <input type="text" id="table-search"></div>
+                                </div>
+                                <!-- Table headers -->
+                                <tr>
+                                    <th>Rendering engine</th>
+                                    <th>Browser</th>
+                                    <th>Platform(s)</th>
+                                    <th>Engine version</th>
+                                    <th>CSS grade</th>
+                                </tr>
+                            </thead>
+                            <!-- Table body with data rows -->
+                            <tbody>
+                                <tr>
+                                    <td>Gecko</td>
+                                    <td>Firefox 1.0</td>
+                                    <td>Win 98+ / OSX.2+</td>
+                                    <td>1.7</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>Gecko</td>
+                                    <td>Firefox 1.5</td>
+                                    <td>Win 98+ / OSX.2+</td>
+                                    <td>1.8</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>Gecko</td>
+                                    <td>Firefox 2.0</td>
+                                    <td>Win 98+ / OSX.2+</td>
+                                    <td>1.8</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>Gecko</td>
+                                    <td>camino 1.0</td>
+                                    <td>OSX.2+</td>
+                                    <td>1.8</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>Gecko</td>
+                                    <td>NetCafe 1.0</td>
+                                    <td>Win 95</td>
+                                    <td>1.7</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>Gecko</td>
+                                    <td>Mozilla 1.0</td>
+                                    <td>Windows 98+/OSX 2+</td>
+                                    <td>1.8</td>
+                                    <td>A</td>
+                                </tr>
+                            </tbody>
+                            <!-- Table footer for pagination -->
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4">Showing 1 to 10 of 57 entries</td>
+                                    <td><a href="#">&lt;</a> <a href="#">&gt;</a></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Designed by Akhila</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Main container for both flower and circle */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Styling for the circle element */
+.color-circle {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%; /* Makes the div a perfect circle */
+    overflow: hidden;
+}
+
+/* Four quadrants within the circle */
+.color-quad {
+    position: absolute;
+    height: 50%; /* Half the height of the circle */
+    width: 50%;  /* Half the width of the circle */
+}
+
+/* Quadrants with respective colors */
+.top-left-quad {
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+.top-right-quad {
+    top: 0;
+    right: 0;
+    background-color: orange;
+}
+
+.bottom-left-quad {
+    bottom: 0;
+    left: 0;
+    background-color: green;
+}
+
+.bottom-right-quad {
+    bottom: 0;
+    right: 0;
+    background-color: purple;
+}
+
+/* Styling for the flower shape */
+.flower-shape {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 7.5%;
+    transform: rotate(-45deg); /* Adds a slight tilt to the flower */
+}
+
+/* Styling for individual petals */
+.flower-petal {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100% 50% 0% 50%; /* Gives petal-like shape */
+}
+
+/* Individual petals with respective colors and positions */
+.red-petal {
+    background-color: red;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg); /* Positioning with rotation */
+}
+
+.orange-petal {
+    background-color: orange;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.green-petal {
+    background-color: green;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(315deg);
+}
+
+.purple-petal {
+    background-color: purple;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(225deg);
+}

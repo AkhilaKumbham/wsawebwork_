@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entities, Symbols, and Charset</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            margin: 20px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .chemistry-section {
+            font-family: "Arial", sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            display: grid;
+            grid-template-columns: 200px 80px 1fr;
+            row-gap: 10px;
+        }
+
+        .chemistry-section .title {
+            font-weight: bold;
+        }
+
+        .chemistry-section .coefficient {
+            text-align: center;
+        }
+
+        .chemistry-section .underline {
+            text-decoration: underline;
+        }
+
+        .algebra-section {
+            font-family: "Arial", sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .currency-section {
+            font-family: "Arial", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            display: grid;
+            grid-template-columns: 200px 70px 1fr;
+            row-gap: 10px;
+        }
+
+        .header-files-section {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 20px;
+        }
+
+        .header-files-section pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>Basic Formulae in Chemistry</h2>
+        <div class="chemistry-section">
+            <span class="title">Carbon dioxide</span>
+            <span class="coefficient">CO<sub>2</sub></span>
+            <span class="description">1 <span class="underline">carbon atom</span> : 2 <span class="underline">oxygen atoms</span></span>
+
+            <span class="title">Methane</span>
+            <span class="coefficient">CH<sub>4</sub></span>
+            <span class="description">1 <span class="underline">carbon atom</span> : 4 <span class="underline">hydrogen atoms</span></span>
+
+            <span class="title">Sulfuric acid</span>
+            <span class="coefficient">H<sub>2</sub>SO<sub>4</sub></span>
+            <span class="description">2 <span class="underline">hydrogen atoms</span> : 1 <span class="underline">sulfur atom</span> : 4 <span class="underline">oxygen atoms</span></span>
+
+            <span class="title">Ethane</span>
+            <span class="coefficient">C<sub>2</sub>H<sub>6</sub></span>
+            <span class="description">1 <span class="underline">carbon atom</span> : 3 <span class="underline">hydrogen atoms</span></span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Basic Formulae in Algebra</h2>
+        <pre class="algebra-section">
+a<sup>2</sup> - b<sup>2</sup> = (a - b) (a + b)
+(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>
+a<sup>2</sup> + b<sup>2</sup> = (a - b)<sup>2</sup> + 2ab
+(a + b + c)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2ab + 2ac + 2bc
+(a + b)<sup>3</sup> = a<sup>3</sup> + 3a<sup>2</sup>b + 3ab<sup>2</sup> + b<sup>3</sup>
+        </pre>
+    </div>
+    
+    <div class="section">
+        <h2>Currency Symbols of Countries</h2>
+        <div class="currency-section">
+            <span>Indian Rupee</span>
+            <span>₹</span>
+            <span>INR</span>
+
+            <span>Japan Yen</span>
+            <span>¥</span>
+            <span>JPY</span>
+
+            <span>New Zealand Dollar</span>
+            <span>$</span>
+            <span>NZD</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Common Header Files in C</h2>
+        <pre class="header-files-section">
+#include&lt;header.h&gt;
+#include&lt;assert.h&gt;
+#include&lt;string.h&gt;
+#include&lt;stdlib.h&gt;
+#include&lt;math.h&gt;
+        </pre>
+    </div>
+</body>
+</html>

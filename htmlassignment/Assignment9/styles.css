@@ -1,0 +1,335 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: #f1c40f; /* Yellow background for the navbar */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Home Section Styling */
+.home-section {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #f1c40f; /* Main yellow background */
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    color: #333;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: #fff; /* White text for contrast */
+}
+
+.subheading {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Right Image Styling */
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Details Section */
+.details-section {
+    background: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.details-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.details-card:hover {
+    transform: translateY(-5px);
+}
+
+.details-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Projects Section */
+.projects-section {
+    background: #e7e7e7;
+    padding: 40px 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background: #ddd;
+    padding: 40px 20px;
+}
+
+.gallery-content {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-content img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Hobbies Section */
+.hobbies-section {
+    background: #f1f1f1;
+    padding: 40px 20px;
+}
+
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hobby-item {
+    background: #fff;
+   
+}
+/* About Me Section */
+.about-section {
+    background-color: #f1c40f; /* Yellow background for a distinct section */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Contact Me Section */
+.contact-section {
+    background: #eaeaea;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: left;
+}
+
+.contact-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contact-card p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    background: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background: #555;
+}
+
+/* Footer Section */
+.footer-section {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-section p a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.footer-section p a:hover {
+    text-decoration: underline;
+}
+
+/* Header and Navigation Styling */
+header {
+    position: fixed; /* Makes the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    background-color: #f1c40f; /* Yellow background for the navbar */
+    padding: 10px 0;
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #555; /* Change color on hover */
+}
+
+/* Adding top padding to sections to account for the fixed navbar */
+section {
+    padding-top: 60px; /* Adjust this value based on navbar height */
+}
+
+.about-link {
+    
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    /* padding: 2px 5px; Add padding */
+    padding-top: 7px;
+    /* border: 2px solid yellow; Add border */
+    /* font-weight: bold; */
+}
+
+

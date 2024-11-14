@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.main-box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;  /* Updated to match the image */
+    font-weight: bold; /* Updated to match the image */
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.author {
+    width: 100%;
+    text-align: center;
+    font-size: 18px; /* Updated to match the image */
+    margin-top: -10px;
+    color: #666;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 20px;
+    background-color: #e0e0e0;
+}
+
+.column-left, .column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.column {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.column h3 {
+    font-size: 20px; /* Updated to match the image */
+    font-weight: bold; /* Updated to match the image */
+    color: #000;
+}
+
+.column p {
+    font-size: 16px; /* Updated to match the image */
+    font-weight: normal; /* Updated to match the image */
+    color: #333;
+}
+
+.column.full-height {
+    flex-grow: 1; /* Ensures that the "Materials and Methods" section stretches to fill the space */
+}
+
+.results {
+    grid-column: 2; /* Spans entire center column */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.results h3 {
+    font-size: 20px; /* Updated to match the image */
+    font-weight: bold; /* Updated to match the image */
+    color: #000;
+}
+
+.results p {
+    font-size: 16px; /* Updated to match the image */
+    font-weight: normal; /* Updated to match the image */
+    color: #333;
+}
+
+.yellow-box {
+    background-color: #ffea94;
+    padding: 20px; /* Ensures enough padding to match height */
+    text-align: center;
+    width: 70%; /* Ensures width is appropriate */
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Maintains font size as required */
+    font-weight: bold; /* Ensures the text is bold */
+    color: #cc0000; /* Red for emphasis */
+    line-height: 1.5; /* Spacing between lines */
+    font-family: 'Arial', sans-serif; /* Keeps the font consistent */
+}
+
+.clear {
+    clear: both;
+}

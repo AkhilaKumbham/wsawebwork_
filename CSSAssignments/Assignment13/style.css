@@ -1,0 +1,543 @@
+body {
+    /* Set the height of the body to take the full viewport height */
+    height: 100vh;
+    /* Ensure consistent box sizing */
+    box-sizing: border-box;
+}
+
+nav {
+    /* Center items horizontally in the nav */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    /* Flexbox to align and space out nav items */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul:last-child {
+    /* Add padding to the last ul for spacing */
+    padding-left: 20%;
+}
+
+nav ul li {
+    /* Flexbox for nav items */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Remove bullet points from list items */
+    list-style: none;
+}
+
+nav ul li a {
+    /* Remove underline from links */
+    text-decoration: none;
+    /* Font style for navigation links */
+    font-family: "Poppins";
+    /* Add padding to the right of links */
+    padding-right: 10px;
+}
+
+.container {
+    /* Flexbox to center and align container content */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* Gap between container items */
+    gap: 20px;
+    /* Set background color */
+    background-color: #eeeeee;
+    /* Allow container to take up remaining space */
+    flex: 1;
+}
+
+.sidebar img {
+    /* Set a standard height for images in the sidebar */
+    height: 25px;
+}
+
+.sidebar {
+    /* Set height for sidebar */
+    height: 500px;
+    /* Remove top margin */
+    margin-top: 0px;
+    /* Set width of sidebar */
+    width: 20%;
+    /* Set text color */
+    color: #434347;
+    /* Flexbox for vertical alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-section {
+    /* Set background color for the sidebar section */
+    background-color: #2b2a2f;
+    /* Add margin below each section */
+    margin-bottom: 5px;
+}
+
+#news-image {
+    /* Add padding around the news image */
+    padding: 5px 0 0 5px;
+}
+
+.menu-item img {
+    /* Add padding to images inside menu items */
+    padding-left: 5px;
+}
+
+.sub-section {
+    /* Flexbox to arrange sub-items vertically */
+    display: flex;
+    flex-direction: column;
+    /* Add gap between sub-items */
+    gap: 15px; 
+}
+
+.sub-item {
+    /* Flexbox for aligning sub-items */
+    display: flex;
+    align-items: center;
+    /* Add gap between the image and text */
+    gap: 15px;
+}
+
+.menu-item:hover {
+    /* Change background and text color on hover */
+    background-color: white;
+    color: black;
+}
+
+.menu-item {
+    /* Flexbox to align menu items */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* Add a border below each menu item */
+    border-bottom: 1px solid white;
+    /* Add gap between the image and text */
+    gap: 15px;
+    /* Add padding to the top and bottom */
+    padding: 10px 0;
+}
+
+.menu-item img, .sub-item img {
+    /* Set height for images in menu and sub-items */
+    height: 25px;
+}
+
+.sub-item p, .menu-item p {
+    /* Remove margins from paragraphs to prevent extra spacing */
+    margin: 0;
+}
+
+/* Styles for sidebar-section-2 */
+.sidebar-section-2 {
+    /* Flexbox to arrange items vertically and distribute space evenly */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* Set automatic height */
+    height: auto;
+    /* Set background with some transparency */
+    background-color: rgba(0, 0, 0, 0.804);
+    /* Add margin at the bottom */
+    margin-bottom: 5px;
+}
+
+/* Add rounded corners to sections */
+.sidebar-section, .sidebar-section-2, .sidebar-section-3 {
+    border-radius: 5px;
+}
+
+.sidebar-section-2 .menu-item {
+    /* Add border below each menu item */
+    border-bottom: 1px solid white;
+    /* Add padding for menu items */
+    padding: 10px 0;
+    /* Add gap between the image and text */
+    gap: 15px;
+}
+
+.sidebar-section-2 .menu-item img {
+    /* Set height for images in sidebar-section-2 */
+    height: 25px;
+}
+
+/* Styles for sidebar-section-3 */
+.sidebar-section-3 {
+    /* Flexbox for arranging items vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* Set automatic height */
+    height: auto;
+    /* Background color with transparency */
+    background-color: rgba(0, 0, 0, 0.804);
+    /* Add margin at the bottom */
+    margin-bottom: 5%;
+}
+
+.sidebar-section-3 .menu-item {
+    /* Add a bottom border for each menu item */
+    border-bottom: 1px solid white;
+    /* Add padding and spacing between items */
+    padding: 10px 0;
+    gap: 15px;
+}
+
+.sidebar-section-3 .menu-item img {
+    /* Set the image height for section 3 */
+    height: 25px;
+}
+
+#msg-counter, #task-counter {
+    /* Background color for message and task counters */
+    background-color: green;
+    /* Set margin to the left for centering */
+    margin-left: 50%;
+    /* Add padding and rounded corners */
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+
+#task-counter {
+    /* Override background color for task counter */
+    background-color: orangered;
+}
+
+/* Main content grid section */
+.content-section {
+    /* Grid layout with 3 columns of 300px each */
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(1, 1fr);
+    /* Gap between grid items */
+    grid-gap: 20px;
+    /* Set max width and margin */
+    max-width: 1200px;
+    margin: 5px auto;
+}
+
+.icon {
+    /* Background and padding for icon containers */
+    background-color: #fff;
+    padding: 20px;
+    /* Rounded corners */
+    border-radius: 8px;
+    /* Center text and add shadow */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+    /* Set height for icon images */
+    height: 50px;
+    /* Center images */
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.growth-info, .user-info, .profit-info {
+    /* Set each item to take up 1 grid column */
+    grid-column: span 1;
+}
+
+.group-section {
+    /* Make group section span 2 columns */
+    grid-column: span 2;
+    /* Grid layout with 3 columns inside the group section */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Add gap between items */
+    grid-gap: 10px;
+}
+
+/* Styles for progress bars */
+.progress-item {
+    /* Flexbox to align items in progress bars */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Set background and padding */
+    background-color: #fff;
+    padding: 20px;
+    /* Add rounded corners and shadow */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add bottom margin */
+    margin-bottom: 10px;
+}
+
+.progress-label {
+    /* Flex property for labels */
+    flex: 1;
+    /* Set font size and color */
+    font-size: 16px;
+    color: #333;
+}
+
+.progress-bar {
+    /* Flex property for the bar */
+    flex: 3;
+    /* Set background color and rounded corners */
+    background-color: #ddd;
+    border-radius: 20px;
+    /* Add margin */
+    margin: 0 15px;
+    /* Set height and position */
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    /* Set height for the progress fill */
+    height: 100%;
+    /* Rounded corners for the progress bar */
+    border-radius: 20px;
+}
+
+/* Progress bar fill colors */
+.windows {
+    width: 78%;
+    background-color: #3498db;
+}
+
+.mac {
+    width: 56%;
+    background-color: #2ecc71;
+}
+
+.linux {
+    width: 44%;
+    background-color: #f39c12;
+}
+
+.iphone {
+    width: 67%;
+    background-color: #e74c3c;
+}
+
+.progress-percent {
+    /* Flex property for percentage text */
+    flex: 1;
+    /* Align text to the right */
+    text-align: right;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Chart section styles */
+.chart-section {
+    display: grid;
+    background-color: #2ecc71;
+}
+
+.profit-chart-section {
+    /* Set background for profit chart */
+    background-color: whitesmoke;
+}
+
+.chart-section img {
+    /* Ensure the image takes the full width */
+    width: 100%;
+}
+
+/* Table styles */
+table.display {
+    width: 100%;
+    margin: 0 auto;
+    /* Collapse borders for table */
+    border-collapse: collapse;
+    /* Add shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table.display thead th {
+    /* Set background color and text color for table headers */
+    background-color: lightgray;
+    color: white;
+    /* Add padding and align text */
+    padding: 10px;
+    text-align: left;
+}
+
+table.display tbody tr:nth-child(even) {
+    /* Background color for even rows */
+    background-color: #f2f2f2;
+}
+
+table.display tbody tr:nth-child(odd) {
+    /* Background color for odd rows */
+    background-color: #ffffff;
+}
+
+table.display tbody td {
+    /* Padding for table data cells */
+    padding: 10px;
+}
+
+/* Header for data section */
+.data-header {
+    background-color: rgb(250, 247, 244);
+}
+
+.data-tables-content {
+    /* Set background color for the data table */
+    background-color: rgb(250, 247, 244);
+}
+
+/* Styles for the search and show entries sections */
+.search-section {
+    /* Flexbox for search and show entries */
+    display: flex;
+    justify-content: space-between;
+    /* Add padding and background color */
+    padding: 10px;
+    background-color: white;
+}
+
+tfoot {
+    /* Set background color for table footer */
+    background-color: white;
+}
+
+tfoot td {
+    /* Add padding to footer cells */
+    padding: 10px;
+}
+
+tfoot td a {
+    /* Style pagination links */
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 5px 10px; 
+    margin: 0 5px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+
+tfoot td a:hover {
+    /* Change background color on hover */
+    background-color: #45a049; 
+}
+
+/* Footer styles */
+footer {
+    /* Flexbox to center content in footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media queries for responsiveness */
+
+/* Adjustments for tablet screens */
+@media (max-width: 768px) {
+    .container {
+        /* Stack container items vertically */
+        flex-direction: column;
+        /* Center items */
+        align-items: center;
+    }
+
+    nav ul {
+        /* Hide navigation list on smaller screens */
+        display: none;
+    }
+
+    .nav-toggle {
+        /* Show hamburger menu icon on smaller screens */
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 480px) {
+    .container {
+        /* Stack container items vertically */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        /* Hide navigation list on mobile screens */
+        display: none;
+    }
+
+    .nav-toggle {
+        /* Show hamburger icon on mobile */
+        display: block;
+    }
+}
+
+/* Default state: hide hamburger icon for larger screens */
+.nav-toggle {
+    display: none; 
+}
+
+/* Styles for the hamburger menu icon */
+.nav-toggle {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.nav-toggle span {
+    /* Style individual lines of the hamburger menu */
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/* Grid adjustments for tablet screens */
+@media (max-width: 768px) {
+    .content-section {
+        /* Make content section single column on smaller screens */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+  
+    .content-section > * {
+        /* Ensure items take up the full width */
+        grid-column: 1 / -1;
+    }
+
+    .search-section .show-entries input, .search-section .table-search input {
+        /* Reduce the width of inputs on smaller screens */
+        width: 50px;
+    }
+
+    nav {
+        /* Adjust navigation for smaller screens */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        /* Hide nav ul on smaller screens */
+        display: none;
+    }
+
+    .nav-toggle {
+        /* Show hamburger icon on smaller screens */
+        display: block;
+    }
+
+    /* Ensure sidebar and content take up full width on smaller screens */
+    .sidebar, .content-wrapper {
+        width: 100%; 
+    }
+}

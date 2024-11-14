@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 12</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #002f4b;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .container {
+            width: 40%;
+            margin: 50px auto;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            background-color: #004f70;
+            padding: 30px;
+        }
+
+        .container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #bcdffb;
+        }
+
+        .container p {
+            text-align: center;
+            font-size: 14px;
+            color: #d2e6f3;
+        }
+
+        form {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .field {
+            margin-bottom: 15px;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        label {
+            width: 30%;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            border-radius: 5px;
+            width: 65%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .btn-group {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-evenly;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #e06a25;
+            width: 40%;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #e85d15;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>CONTACT FORM</h2>
+        <p>If you have any queries, kindly take a moment to fill up this form. Our representatives will contact you shortly.</p>
+
+        <form>
+            <div class="field">
+                <label for="customer-name">Your Name:</label>
+                <input type="text" id="customer-name" placeholder="Name">
+            </div>
+            <div class="field">
+                <label for="customer-email">Email Address:</label>
+                <input type="email" id="customer-email" placeholder="Mail@example.com">
+            </div>
+            <div class="field">
+                <label for="bill-number">Bill Number:</label>
+                <input type="text" id="bill-number" placeholder="Bill No.">
+            </div>
+            <div class="field">
+                <label for="customer-phone">Phone Number:</label>
+                <input type="text" id="customer-phone" placeholder="Phone Number">
+            </div>
+            <div class="field">
+                <label for="customer-enquiry">Customer Enquiry:</label>
+                <textarea id="customer-enquiry" placeholder="Queries"></textarea>
+            </div>
+            <div class="btn-group">
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

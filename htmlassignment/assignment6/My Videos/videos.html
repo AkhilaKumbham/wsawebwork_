@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Video Player Tasks</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color:rgb(159, 106, 128); /* Very light pastel background */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            color: #333; /* Darker gray for text */
+        }
+
+        /* Container for the left and right section */
+        .main-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            gap: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            border-radius: 12px;
+            background-color: #ffffff;
+            padding: 20px;
+            align-items: stretch; /* Ensures both sides stretch to the same height */
+        }
+
+        /* Left side - Unified Video List container with task completion, additional information, and descriptions */
+        .left-side {
+            width: 40%;
+            background-color: #f8f0f5; /* Very soft pink background */
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Video List */
+        .video-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .left-side a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-side a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+        }
+
+        .video-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 8px;
+            background-color: #f0e1e5; /* Soft pink for icons */
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for icons */
+        }
+
+        .video-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #4a4a4a; /* Darker gray for video titles */
+        }
+
+        /* Descriptions for each task moved to the left-side */
+        .description {
+            font-size: 16px;
+            color: #4f4f66; /* Dark navy blue */
+            background-color: #f8f0f4; /* Soft rose gold background for description */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: left;
+            margin-bottom: 20px;
+            line-height: 1.6; /* Improve readability */
+        }
+
+        .description ul {
+            padding-left: 20px;
+        }
+
+        .description ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Right side main video container */
+        .right-side {
+            width: 60%;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures content fills space */
+        }
+
+        /* Video frame with fixed width and height */
+        .video-frame {
+            position: relative;
+            width: 100%;
+            height: 350px; /* Fixed height for videos */
+            margin-bottom: 10px; /* Bottom margin for spacing */
+            background-color: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 3px solid #d8a1a7; /* Rose gold border */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow around video */
+        }
+
+        .video-frame video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* One-line description below each video */
+        .video-description {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: -10px;
+            margin-bottom: 20px; /* Space between videos */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <!-- Left Side - Video List with Icon, Descriptions -->
+    <div class="left-side">
+        <div class="video-list">
+            <a href="#video1">
+                <img src="shuffle.png" alt="Shuffle Icon" class="video-icon">
+                <span class="video-title">Shuffle</span>
+            </a>
+            <a href="#video2">
+                <img src="CardsDecoration.png" alt="Decor Icon" class="video-icon">
+                <span class="video-title">Decor</span>
+            </a>
+            <a href="#video3">
+                <img src="features.png" alt="Features Icon" class="video-icon">
+                <span class="video-title">Features</span>
+            </a>
+            <a href="#video4">
+                <img src="powder.png" alt="Glitter Icon" class="video-icon">
+                <span class="video-title">Glitter</span>
+            </a>
+            <a href="#video5">
+                <img src="pizza.png" alt="Pizza Icon" class="video-icon">
+                <span class="video-title">Pizza</span>
+            </a>
+            <a href="#video6">
+                <img src="coffee.png" alt="Coffee Icon" class="video-icon">
+                <span class="video-title">Coffee</span>
+            </a>
+        </div>
+
+        <!-- Descriptions for each task -->
+        <div class="description">
+            <p><strong>Task 1: Completing the assignment on time with all required deliverables.</strong></p>
+            <ul>
+                <li>Focus on managing time effectively to ensure timely submission.</li>
+                <li>Ensure all requirements and deliverables are completed before the due date.</li>
+                <li>Double-check for any mistakes and make necessary corrections before final submission.</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <p><strong>Task 2: Decoration of cards and creative layouts for the event.</strong></p>
+            <ul>
+                <li>Designing visually appealing cards that match the event’s theme.</li>
+                <li>Use a variety of creative tools such as colors, textures, and fonts.</li>
+                <li>Ensure the layout is both functional and attractive for the audience.</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <p><strong>Task 3: Highlighting and featuring key points of the presentation.</strong></p>
+            <ul>
+                <li>Identify and emphasize the most important points in the presentation.</li>
+                <li>Use tools like bullet points and visuals to make these points stand out.</li>
+                <li>Ensure the key points are clear and easy for the audience to understand.</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <p><strong>Task 4: Adding glitter powder to enhance the final product.</strong></p>
+            <ul>
+                <li>Apply glitter powder in a way that enhances the overall look and feel.</li>
+                <li>Ensure the glitter is applied evenly and doesn’t overpower the design.</li>
+                <li>Use subtle amounts to highlight key areas of the product.</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <p><strong>Task 5: Delivering pizza on time to maintain customer satisfaction.</strong></p>
+            <ul>
+                <li>A smooth delivery ensures that customers are happy and satisfied.</li>
+                <li>Make sure the pizza is hot and the service is timely to maintain customer loyalty.</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <p><strong>Task 6: Brewing the perfect cup of coffee.</strong></p>
+            <ul>
+                <li>Ensure the coffee is brewed to perfection with a strong aroma.</li>
+                <li>Serve the coffee hot and fresh for the best experience.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Right Side - Main Player -->
+    <div class="right-side">
+
+        <!-- Video 1 -->
+        <div id="video1" class="video-frame">
+            <video controls>
+                <source src="10567192-uhd_2160_4096_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-description">Shuffle</div>
+
+        <!-- Video 2 -->
+        <div id="video2" class="video-frame">
+            <video controls>
+                <source src="6992413-hd_1080_1920_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-description">Decor</div>
+
+        <!-- Video 3 -->
+        <div id="video3" class="video-frame">
+            <video controls>
+                <source src="7234917-uhd_3840_2160_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-description">Features</div>
+
+        <!-- Video 4 -->
+        <div id="video4" class="video-frame">
+            <video controls>
+                <source src="7615506-hd_1080_1920_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-description">Glitter</div>
+
+        <!-- Video 5 -->
+        <div id="video5" class="video-frame">
+            <video controls>
+                <source src="7835653-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-description">Pizza</div>
+
+        <!-- Video 6 -->
+        <div id="video6" class="video-frame">
+            <video controls>
+                <source src="9046240-uhd_2160_3840_24fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-description">Coffee</div>
+
+    </div>
+</div>
+
+</body>
+</html>

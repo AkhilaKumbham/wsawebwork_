@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Global reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    width: 100%;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Navigation logo */
+nav h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+/* Navigation links */
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: orangered;
+}
+
+/* Hide hamburger menu for large screens */
+.hamburger {
+    display: none;
+}
+
+/* Main content area */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Image wrapper */
+.image-wrapper {
+    width: 30%;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Text content below images */
+.text-content {
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid white;
+    width:90%;
+    height: 250px;
+    background-color:white;
+    margin-left: 18px;
+    padding: 20px;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.text-content p {
+    color: orangered;
+}
+
+.text-content h3 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.text-content h6 {
+    color: grey;
+}
+
+/* For tablet devices (768px width) */
+@media (max-width: 768px) {
+    /* Stack images in a 2-1 layout */
+    .content-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .image-wrapper {
+        width: 45%;
+    }
+
+    .image-wrapper:nth-child(3) {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-left:100px;
+        width: 60%;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    nav img{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* For mobile devices (480px width) */
+@media (max-width: 480px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    .image-wrapper:nth-child(3) {
+        margin-left:0;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}

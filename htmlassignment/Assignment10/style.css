@@ -1,0 +1,202 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header section */
+.header {
+    /* background-color: #6b4b3e; */
+    /* padding: 20px; */
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 14px;
+} */
+
+/* .header-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+} */
+
+
+  
+
+/* Main Layout (Flexbox to separate Topic One and Right Column) */
+.main-layout {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Topic One styles (Full Left Column) */
+.topic-one {
+    flex: 1;
+    background-color: #AA96B7; /* Purple background */
+    /* color: white; */
+    /* padding: 20px; */
+    border: 1px solid #AA96B7;
+
+    
+}
+
+.topic-one h2 {
+    background-color: #5E3B4D; /* Thick lavender for heading */
+    padding: 10px;
+    color: white;
+}
+
+.topic-one img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+/* Right Column */
+.right-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grid for Topics Two and Three */
+.topics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Topic styles for Two and Three */
+.topic {
+    /* padding: 20px; */
+    border: 1px solid #ddd;
+}
+
+.topic-two {
+    border: 2px solid #FFAD60;
+    /* background-color: #f8f8ff; */
+}
+
+.topic-two h2 {
+    background-color: #FFAD60; /* Orange heading */
+    padding: 10px;
+    color: white;
+}
+
+.topic-three {
+    background-color: #AA96B7;
+}
+
+.topic-three h2 {
+    background-color: #5E3B4D; /* Thick lavender heading */
+    padding: 10px;
+    color: white;
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .key-dates-flex {
+        flex-direction: column;
+    }
+
+    .date-box {
+        width: 100%;
+    }
+}
+
+.topic-content{
+    padding: 20px;
+}
+
+
+
+
+/* Key Dates Section */
+.key-dates {
+    /* background-color: #f8f8ff; Light lavender like Topic 2 and 3 */
+    color: black;
+    /* padding: 20px; */
+    border: 2px solid #9B3922; /* Consistent styling */
+}
+
+.key-dates h2 {
+    
+    background-color: #9B3922; /* Thick lavender */
+    color: white;
+    padding: 10px;
+    text-align: left; /* Center align the heading */
+}
+
+/* Flex layout for date items (two per row) */
+.key-dates-flex {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping of items */
+    gap: 20px; /* Gap between items */
+}
+
+.date-item {
+    flex: 1 1 45%; /* Take up about 45% of the container for 2 columns */
+    padding: 10px;
+    /* border-bottom: 1px solid #ddd; Optional: A subtle border between dates */
+}
+
+.date-item:last-child {
+    border-bottom: none; /* Remove border after last item */
+}
+
+@media (max-width: 768px) {
+    /* On smaller screens, make the dates stack vertically */
+    .date-item {
+        flex: 1 1 100%;
+    }
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white; /* Your preferred text color */
+    /* font-weight: bold; */
+}
+.text {
+    padding: 10px; /* Your preferred padding */
+    /* border: 2px solid yellow; Your preferred border */
+    /* background-color: rgba(0, 0, 0, 0.5); Optional: background color for better readability */
+}

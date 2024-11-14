@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Buy Tickets to the Web Developer Gala</h1>
+        <p>Tickets are $10 each. Dinner packages are an extra $5. All fields are required</p>
+
+        <!-- Tickets and Add-ons Section -->
+        <div class="container" id="div1">
+            <h5>Tickets and Add-ons</h5>
+            <div class="inline-container">
+                <label class="label1" for="tickets">Number of Tickets (Limit 8)</label>
+                <input type="number" id="tickets" min="1" max="8" placeholder="1">
+            </div>
+            <div class="inline-container">
+                <label class="label2" for="dinner">Dinner Packages (Serves 1)</label>
+                <input type="number" id="dinner" min="1" max="2" placeholder="1">
+            </div>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="container" id="div2">
+            <h5>Payment</h5>
+            <label class="label1">Credit card number <span class="hint">No spaces or dashes, please.</span></label>
+            <input type="text" placeholder="372000000000008">
+            <label class="label2">Expiration date (MM/YYYY)</label>
+            <input type="text" placeholder="01/2018">
+        </div>
+
+        <!-- Billing Address Section -->
+        <div class="container" id="div3">
+            <h5>Billing Address</h5>
+            <label class="label1">Name</label>
+            <input type="text" placeholder="ex: John Q. Public">
+            <label class="label1">Street Address</label>
+            <input type="text" placeholder="ex: 12345 Main Street, Apt 23">
+            <label class="label1">City</label>
+            <input type="text" placeholder="ex: Anytown">
+            <label class="label1">State</label>
+            <input list="text1" placeholder="CA">
+            <datalist id="text1">
+                <option value="CA"></option>
+                <option value="TS"></option>
+                <option value="BNG"></option>
+                <option value="MHR"></option>
+                <option value="MP"></option>
+            </datalist>
+            <label class="label1">ZIP</label>
+            <input type="text" placeholder="12345">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Buy Tickets!</button>
+    </div>
+</body>
+</html>

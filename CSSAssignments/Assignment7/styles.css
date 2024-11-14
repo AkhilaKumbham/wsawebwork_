@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f7f7f7;
+    font-size: 15px; /* Increased font size */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    border-style: double;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.header-left, .header-right {
+    width: 20%;
+    text-align: left;
+    font-family: 'Libre Baskerville', serif; /* Traditional newspaper font */
+}
+
+.header-title {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Libre Baskerville', serif; /* Same for title */
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Main Headline */
+.main-headline h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 600; /* Thicker text for headline */
+    background-color: lightgray;
+    padding: 5px;
+}
+
+/* Flex container for the stories */
+.story-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.story-row1 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.story-column {
+    width: 30%; 
+    padding: 0 10px;
+    font-size: 15px; /* Increased font size */
+    text-align: justify;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling the quote box */
+.quote-box {
+    background-color: lightgray;
+    padding: 10px;
+    font-style: italic;
+    border-left: 2px solid black;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.third-row-heading {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}

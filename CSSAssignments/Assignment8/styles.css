@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #fff;
+    padding: 20px;
+}
+
+.story-container {
+    background-color: #111;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Add this to ensure the pink line stays within the container */
+}
+
+.story-header {
+    text-align: center;
+    background-color: white;
+    border: 2px dashed red;
+    border-radius: 10px;
+    width: 50%;
+    padding-bottom: 20px;
+    position: relative;
+    top: -40px; /* Adjust this to move the header down */
+    transform: translateX(50%);
+}
+
+.story-header h2 {
+    font-size: 32px;
+    background-color: #000;
+    padding: 15px;
+    display: inline-block;
+    
+}
+
+.storyline {
+    position: relative;
+    padding: 50px 0; 
+}
+.storyline:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #ff3399;
+    top: -40px; /* Start the pink line higher to touch the header */
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 1;
+    height: 100%; /* Full height of the container */
+}
+.story-event {
+    width: 50%;
+    position: relative;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+.left-event {
+    left: 0;
+    text-align: right;
+}
+
+.right-event {
+    left: 50%;
+}
+
+.event-content {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ff3399;
+    margin-top: 20px; 
+}
+
+.event-year {
+    width: 80px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid #ff3399;
+    border-radius: 5px;
+    z-index: 2;
+} 
+
+.year-left-event{
+    position: relative;
+    transform: translateX(440%);
+}
+.year-right-event{
+    position: relative;
+    transform: translateX(-100%);
+} 
+
+.content-right-event{
+    text-align: right;
+}
+.content-left-event{
+    text-align: left;
+}

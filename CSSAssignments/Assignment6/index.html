@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop With Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .nav-content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<nav>
+    <div class="logo">
+        <h2>Selling</h2>
+    </div>
+    <ul>
+        <li><a href="#home" id="home-link">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#special">Special</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Background section with buttons -->
+<div class="background">
+    <div class="content-wrapper">
+        <h1>Shop With Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolore aspernatur, perspiciatis labore ratione fugit, odio facilis voluptatem eveniet deserunt cumque temporibus quaerat sunt natus, veritatis dolorem porro quae deleniti!
+          Saepe reiciendis obcaecati voluptas veritatis, deleniti voluptate. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+        <div class="buttons">
+            <a href="#shop-now" class="button">Shop Now</a>
+            <a href="#club-membership" class="button">Club Membership</a>
+        </div>
+    </div>
+</div>
+
+<!-- Content Sections for Nav Items -->
+<div id="home" class="content">
+    <h2>Welcome to the Home Page</h2>
+    <p>This is the home section. Enjoy browsing our shop for the best products.</p>
+    <!-- Navigation content placeholder for 5 lines -->
+    <div class="nav-content" id="nav-content">
+        <p>Home: Browse our latest products and enjoy exclusive deals.</p>
+        <p>Products: Discover a wide range of categories to explore.</p>
+        <p>About Us: Learn more about our company and values.</p>
+        <p>Special: Don’t miss our limited-time offers and discounts.</p>
+        <p>Contact: Get in touch with us for any queries or assistance.</p>
+    </div>
+</div>
+
+<div id="products" class="content">
+    <h2>Our Products</h2>
+    <p>Explore our diverse product range including electronics, fashion, and more.</p>
+</div>
+
+<div id="about" class="content">
+    <h2>About Us</h2>
+    <p>We are dedicated to offering high-quality products and excellent customer service.</p>
+</div>
+
+<div id="special" class="content">
+    <h2>Special Offers</h2>
+    <p>Check out our limited-time special offers and discounts!</p>
+</div>
+
+<div id="testimonials" class="content">
+    <h2>Customer Testimonials</h2>
+    <p>Our customers love us! Read what they have to say about our products and services.</p>
+</div>
+
+<div id="blog" class="content">
+    <h2>Our Blog</h2>
+    <p>Stay updated with the latest trends and news in our blog.</p>
+</div>
+
+<div id="contact" class="content">
+    <h2>Contact Us</h2>
+    <p>We are here to assist you with any questions or concerns. Reach out to us!</p>
+</div>
+
+<!-- Content Sections for Buttons -->
+<div id="shop-now" class="content">
+    <h2>Shop Now</h2>
+    <p>Welcome to the shop section! Browse our products and find amazing deals!</p>
+</div>
+
+<div id="club-membership" class="content">
+    <h2>Club Membership</h2>
+    <p>Join our exclusive club membership for special discounts and perks!</p>
+</div>
+
+<!-- JavaScript to show 5 lines when 'Home' is clicked -->
+<script>
+    document.getElementById('home-link').addEventListener('click', function() {
+        var navContent = document.getElementById('nav-content');
+        navContent.style.display = 'block';
+    });
+</script>
+
+</body>
+</html>

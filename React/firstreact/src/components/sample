@@ -1,0 +1,59 @@
+ /* return (
+    <div className="App">
+      hello
+    </div>
+  );*/
+  //without jsx below line
+ // const element =React.createElement("h1",null,"Hello")
+//  with jsx
+//const element=<h1>Hello</h1>
+// return element
+//const greeting="hi"
+//return <h1>hello {greeting} </h1>
+//example 3 count he button clicks
+//const[count,setCount]=useState(0);
+//count holds the state value 
+//set count is the function to update it
+//return(
+  //<div>
+    //<h1>You clicked th button {count} times</h1>
+    //<button onClick={()=>setCount(count+1)}>Click me</button>
+ // </div>
+//)
+//example 4 count he button clicks using function
+//const[count,setCount]=useState(0);
+//count holds the state value 
+//set count is the function to update it
+//return(
+  // <div>
+   {/* <ClickButton count={count} handleClick={()=>setCount(count+1)}/> */}
+  // </div>
+//);
+//example 5: Conditiona Rendering with JSX
+//const [isLoggedIn,setLoggedIn]=useState(false)
+//user is not logged in start
+
+//const style={
+ /// color:"white",
+// backgroundColor:"blue",
+//}
+//return(
+ // <>   
+ {/*  //instead of div fragment <> can be written */}
+   //   {isLoggedIn?<h1>Welcome Back</h1>:<h1>Sign in</h1>}
+    //  <button onClick={()=>setLoggedIn(!isLoggedIn)} style={style}>{isLoggedIn?"Logout":"Login"}</button>
+ // </>
+//);
+//return(
+//<>
+//<Displaymessage  name="Jhon"/>
+//<Displaymessage  name="Max"/>
+//</>
+//);
+// return (
+//   <>
+//   <Profilecard name="Jhon" age={30} location="hyd" />
+//   <Profilecard name="Alice" age={40} location="chennai"/>
+//   </>
+// )
+// }
